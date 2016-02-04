@@ -58,7 +58,7 @@ def paying_debt_bs(balance, annualInterestRate):
     """
     monthlyInterestRate = annualInterestRate / 12.0
     epsilon = 0.01
-    #  guessCount = 0
+    # guessCount = 0
     lowerBound = balance / 12.0
     upperBound = (balance * (1 + monthlyInterestRate) ** 12) / 12.0
     yearlyUnpaidBalance = balance
@@ -66,42 +66,42 @@ def paying_debt_bs(balance, annualInterestRate):
     while yearlyUnpaidBalance > epsilon or yearlyUnpaidBalance < -epsilon:
         yearlyUnpaidBalance = balance
         monthlyPayment = (lowerBound + upperBound) / 2.0
-        #  guessCount += 1
-        #  print 'guessCount: %d' % guessCount
-        #  print 'lowerBound: %.2f, upperBound: %.2f, monthlyPayment: %.2f' % \
-        #      (lowerBound, upperBound, monthlyPayment)
+        # guessCount += 1
+        # print 'guessCount: %d' % guessCount
+        # print 'lowerBound: %.2f, upperBound: %.2f, monthlyPayment: %.2f' % \
+        #     (lowerBound, upperBound, monthlyPayment)
         for month in range(1, 13):
             monthlyUnpaidBalance = yearlyUnpaidBalance - monthlyPayment
             yearlyUnpaidBalance = monthlyUnpaidBalance + \
                 (monthlyInterestRate * monthlyUnpaidBalance)
         if yearlyUnpaidBalance > epsilon:
-            #  print 'yearlyUnpaidBalance: %f -> Not enough payment!\n' % \
-            #      yearlyUnpaidBalance
+            # print 'yearlyUnpaidBalance: %f -> Not enough payment!\n' % \
+            #     yearlyUnpaidBalance
             lowerBound = monthlyPayment
         elif yearlyUnpaidBalance < -epsilon:
-            #  print 'yearlyUnpaidBalance: %f -> Too much payment!\n' % \
-            #      yearlyUnpaidBalance
+            # print 'yearlyUnpaidBalance: %f -> Too much payment!\n' % \
+            #     yearlyUnpaidBalance
             upperBound = monthlyPayment
-        #  else:
-        #      print 'yearlyUnpaidBalance: %f' % yearlyUnpaidBalance
-        #      print 'Success! Now yearlyUnpaidBalance is neither:\n' \
-        #          '- greater than 0.01; nor\n' \
-        #          '- less than -0.01.\n'
+        # else:
+        #     print 'yearlyUnpaidBalance: %f' % yearlyUnpaidBalance
+        #     print 'Success! Now yearlyUnpaidBalance is neither:\n' \
+        #         '- greater than 0.01; nor\n' \
+        #         '- less than -0.01.\n'
 
-    #  print 'Total guessCount: %d' % guessCount
+    # print 'Total guessCount: %d' % guessCount
     print 'Lowest Payment: %.2f' % monthlyPayment
 
 
-#  Test cases:
-#  paying_debt_bs(balance, annualInterestRate)
+# Test cases:
+# paying_debt_bs(balance, annualInterestRate)
 paying_debt_bs(320000, 0.2)     # ==> Lowest Payment: 29157.09
 paying_debt_bs(999999, 0.18)    # ==> Lowest Payment: 90325.03
 
 ###############################################################################
 
-#  NOTES: some maths required
+# NOTES: some maths required
 
-#  - Monthly interest rate = (Annual interest rate) / 12.0
-#  - Monthly payment lower bound = Balance / 12
-#  - Monthly payment upper bound = (Balance x (1 + Monthly interest rate)^12) \
-#        / 12.0
+# - Monthly interest rate = (Annual interest rate) / 12.0
+# - Monthly payment lower bound = Balance / 12
+# - Monthly payment upper bound = (Balance x (1 + Monthly interest rate)^12) \
+#       / 12.0

@@ -5,7 +5,7 @@ def isVowel(char):
     returns: True if char is a vowel and False otherwise.
     '''
     # Your code here
-    #  char = char.lower()
+    # char = char.lower()
     if char == 'a' or char == 'e' or char == 'i' or \
             char == 'o' or char == 'u':
         return True

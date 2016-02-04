@@ -34,65 +34,64 @@ def item_order(order):
                                   hamburger, hamburger_num,
                                   water, water_num)
 
-    #  return '{}:{} {}:{} {}:{}'.format(salad, salad_num,
-    #                                    hamburger, hamburger_num,
-    #                                    water, water_num)
+    # return '{}:{} {}:{} {}:{}'.format(salad, salad_num,
+    #                                   hamburger, hamburger_num,
+    #                                   water, water_num)
 
-    #  return (salad + ':' + str(salad_num),
-    #          hamburger + ':' + str(hamburger_num),
-    #          water + ':' + str(water_num))
+    # return (salad + ':' + str(salad_num),
+    #         hamburger + ':' + str(hamburger_num),
+    #         water + ':' + str(water_num))
 
-    #  return (salad + ':' + str(salad_num) + ' ' +
-    #          hamburger + ':' + str(hamburger_num) + ' ' +
-    #          water + ':' + str(water_num))
+    # return (salad + ':' + str(salad_num) + ' ' +
+    #         hamburger + ':' + str(hamburger_num) + ' ' +
+    #         water + ':' + str(water_num))
 
 #  Test function:
 item_order('salad water hamburger salad hamburger')
 item_order('hamburger water hamburger')
 
-
 ###############################################################################
 
-#  NOTES: Test cases
+# NOTES: Test cases
 
-#  [Test case 1]
-#  If order = "salad water hamburger salad hamburger"
-#  then the function returns "salad:2 hamburger:2 water:1"
+# [Test case 1]
+# If order = "salad water hamburger salad hamburger"
+# then the function returns "salad:2 hamburger:2 water:1"
 
-#  [Test case 2]
-#  If order = "hamburger water hamburger"
-#  then the function returns "salad:0 hamburger:2 water:1"
+# [Test case 2]
+# If order = "hamburger water hamburger"
+# then the function returns "salad:0 hamburger:2 water:1"
 
 
-#  NOTES: How to return?
-#  [Example 1: String concatenation with + symbol]
-#
-#  return (salad + ':' + str(salad_num) + ' ' +
-#          hamburger + ':' + str(hamburger_num) + ' ' +
-#          water + ':' + str(water_num))
-#
-#  output: salad:2 hamburger:2 water:1
+# NOTES: How to return?
+# [Example 1: String concatenation with + symbol]
 
-#  [Example 2: String concatenation? with , symbol]
-#
-#  return (salad + ':' + str(salad_num),
-#          hamburger + ':' + str(hamburger_num),
-#          water + ':' + str(water_num))
-#
-#  output: ('salad:2', 'hamburger:2', 'water:1')
+# return (salad + ':' + str(salad_num) + ' ' +
+#         hamburger + ':' + str(hamburger_num) + ' ' +
+#         water + ':' + str(water_num))
 
-#  [Example 3]
-#
-#  return '%s:%d %s:%d %s:%d' % (salad, salad_num,
-#                                hamburger, hamburger_num,
-#                                water, water_num)
-#
-#  output: salad:2 hamburger:2 water:1
+# output: salad:2 hamburger:2 water:1
 
-#  [Example 4]
-#
-#  return '{}:{} {}:{} {}:{}'.format(salad, salad_num,
-#                                    hamburger, hamburger_num,
-#                                    water, water_num)
-#
-#  output: salad:2 hamburger:2 water:1
+# [Example 2: String concatenation? with , symbol]
+
+# return (salad + ':' + str(salad_num),
+#         hamburger + ':' + str(hamburger_num),
+#         water + ':' + str(water_num))
+
+# output: ('salad:2', 'hamburger:2', 'water:1')
+
+# [Example 3]
+
+# return '%s:%d %s:%d %s:%d' % (salad, salad_num,
+#                             hamburger, hamburger_num,
+#                             water, water_num)
+
+# output: salad:2 hamburger:2 water:1
+
+# [Example 4]
+
+# return '{}:{} {}:{} {}:{}'.format(salad, salad_num,
+#                                 hamburger, hamburger_num,
+#                                 water, water_num)
+
+# output: salad:2 hamburger:2 water:1

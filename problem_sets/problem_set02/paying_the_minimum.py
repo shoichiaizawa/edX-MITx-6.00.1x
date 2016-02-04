@@ -44,24 +44,24 @@ def paying_the_minimum(balance, annualInterestRate, monthlyPaymentRate):
     print 'Remaining balance: %.2f' % balance
 
 
-#  paying_the_minimum(balance, annualInterestRate, monthlyPaymentRate)
+# paying_the_minimum(balance, annualInterestRate, monthlyPaymentRate)
 paying_the_minimum(4213, 0.2, 0.04)
 paying_the_minimum(4842, 0.2, 0.04)
 
 
 ###############################################################################
 
-#  NOTE: some maths to do
+# NOTE: some maths to do
 
-#  - Monthly interest rate = (Annual interest rate) / 12.0
-#  - Minimum monthly payment = \
-#        (Minimum monthly payment rate) x (Previous balance)
-#  - Monthly unpaid balance = (Previous balance) - (Minimum monthly payment)
-#  - Updated balance each month = (Monthly unpaid balance) + \
-#        (Monthly interest rate x Monthly unpaid balance)
+# - Monthly interest rate = (Annual interest rate) / 12.0
+# - Minimum monthly payment = \
+#       (Minimum monthly payment rate) x (Previous balance)
+# - Monthly unpaid balance = (Previous balance) - (Minimum monthly payment)
+# - Updated balance each month = (Monthly unpaid balance) + \
+#       (Monthly interest rate x Monthly unpaid balance)
 
 ########################################
 
 # NOTE: round to n decimal place
 
-#  round(value, 2) ==> e.g. round(813.4141998135, 2) corrected to 814.41
+# round(value, 2) ==> e.g. round(813.4141998135, 2) corrected to 814.41

@@ -20,11 +20,11 @@ def subStrFinder(s, subStr):
 
     return count
 
-    #  print 'Number of times bob occurs is: ' + str(count)
-    #  print "Number of times the sub-string '" + subStr + \
-    #        "' found in the string '" + s + "' is: " + str(count)
+    # print 'Number of times bob occurs is: ' + str(count)
+    # print "Number of times the sub-string '" + subStr + \
+    #       "' found in the string '" + s + "' is: " + str(count)
 
 
-#  Test the function:
+# Test the function:
 print subStrFinder('azcbobobegghakl', 'bob')
-#  print 'Number of times bob occurs is: ' + str(subStrFinder(s, 'bob'))
+# print 'Number of times bob occurs is: ' + str(subStrFinder(s, 'bob'))

@@ -47,8 +47,8 @@ def paying_debt(balance, annualInterestRate):
     print 'Lowest Payment: ' + str(monthlyPayment)
 
 
-#  Test cases:
-#  paying_debt(balance, annualInterestRate)
+# Test cases:
+# paying_debt(balance, annualInterestRate)
 paying_debt(3329, 0.2)  # ==> Lowest Payment: 310
 paying_debt(4773, 0.2)  # ==> Lowest Payment: 440
 paying_debt(3926, 0.2)  # ==> Lowest Payment: 360
@@ -56,10 +56,10 @@ paying_debt(3926, 0.2)  # ==> Lowest Payment: 360
 
 ###############################################################################
 
-#  NOTES: some maths required
+# NOTES: some maths required
 
-#  - Monthly interest rate = (Annual interest rate) / 12.0
-#  - Monthly unpaid balance = (Previous balance) - \
-#        (Minimum fixed monthly payment)
-#  - Updated balance each month = (Monthly unpaid balance) + \
-#        (Monthly interest rate x Monthly unpaid balance)
+# - Monthly interest rate = (Annual interest rate) / 12.0
+# - Monthly unpaid balance = (Previous balance) - \
+#     (Minimum fixed monthly payment)
+# - Updated balance each month = (Monthly unpaid balance) + \
+#     (Monthly interest rate x Monthly unpaid balance)

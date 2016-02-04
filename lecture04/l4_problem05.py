@@ -8,6 +8,6 @@ def clip(lo, x, hi):
     '''
     # Your code here
     return max(min(x, hi), lo)
-    #  return min(max(x, lo), hi)
+    # return min(max(x, lo), hi)
 
 print clip(2, 1, 3)
