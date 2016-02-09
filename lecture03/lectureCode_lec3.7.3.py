@@ -4,6 +4,8 @@
 
 epsilon = 0.01
 y = 24.0
+# y = 25.0
+# y = 12345.0
 guess = y/2.0
 
 while abs(guess*guess - y) >= epsilon:

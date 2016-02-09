@@ -1,8 +1,11 @@
 # lecture 3.5, slide 2
 
-x = 25
+# x = 25
+x = 12345
 epsilon = 0.01
 step = epsilon**2
+# step = .5
+# step = 2
 numGuesses = 0
 ans = 0.0
 while (abs(ans**2 - x)) >= epsilon and ans <= x:
