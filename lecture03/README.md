@@ -1,7 +1,7 @@
 Finding a cube root of an integer
 ---------------------------------
 
-##### `lectureCode_lec3.2.4.py`
+##### `lec3.2.4.py`
 
 ```python
 # lecture 3.2, slide 4
@@ -18,19 +18,19 @@ else:
 ```
 
 ```python
->>> execfile('lectureCode_lec3.2.4.py')
+>>> execfile('lec3.2.4.py')
 Enter an integer: 27
 Cube root of 27 is 3
->>> execfile('lectureCode_lec3.2.4.py')
+>>> execfile('lec3.2.4.py')
 Enter an integer: 24
 24 is not a perfect cube
->>> execfile('lectureCode_lec3.2.6.py')
+>>> execfile('lec3.2.6.py')
 ```
 
 Extending scope
 ---------------
 
-##### `lectureCode_lec3.2.6.py`
+##### `lec3.2.6.py`
 
 ```python
 # lecture 3.2, slide 6
@@ -51,7 +51,7 @@ else:
 ```python
 Enter an integer: 27
 Cube root of 27 is 3
->>> execfile('lectureCode_lec3.2.6.py')
+>>> execfile('lec3.2.6.py')
 Enter an integer: -27
 Cube root of -27 is -3
 ```
@@ -63,7 +63,7 @@ What happens if we miss a condition?
 
 Remove `ans = 0`
 
-##### `lectureCode_lec3.2.6.py`
+##### `lec3.2.6.py`
 
 ```python
 # lecture 3.2, slide 6
@@ -82,11 +82,11 @@ else:
 ```
 
 ```python
->>> execfile('lectureCode_lec3.2.6.py')
+>>> execfile('lec3.2.6.py')
 Enter an integer: 27
 Traceback (most recent call last):
   File "<stdin>", line 2, in <module>
-  File "lectureCode_lec3.2.6.py", line 6, in <module>
+  File "lec3.2.6.py", line 6, in <module>
     while ans**3 < abs(x):
 NameError: name 'ans' is not defined
 ```
@@ -95,7 +95,7 @@ NameError: name 'ans' is not defined
 
 Remove `ans = ans + 1`
 
-##### `lectureCode_lec3.2.6.py`
+##### `lec3.2.6.py`
 
 ```python
 # lecture 3.2, slide 6
@@ -115,7 +115,7 @@ else:
 ```
 
 ```python
->>> execfile('lectureCode_lec3.2.6.py')
+>>> execfile('lec3.2.6.py')
 Enter an integer: 27
 0
 0
@@ -127,7 +127,7 @@ Enter an integer: 27
 ^C
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-  File "lectureCode_lec3.2.6.py", line 8, in <module>
+  File "lec3.2.6.py", line 8, in <module>
     print(ans)
 KeyboardInterrupt
 >>>
@@ -138,7 +138,7 @@ KeyboardInterrupt
 A cleaned up cube root finder using a for loop
 ----------------------------------------------
 
-##### `lectureCode_lec3.3.3.py`
+##### `lec3.3.3.py`
 
 ```python
 # lecture 3.3, slide 3
@@ -157,13 +157,13 @@ else:
 ```
 
 ```python
->>> execfile('lectureCode_lec3.3.3.py')
+>>> execfile('lec3.3.3.py')
 Enter an integer: 27
 Cube root of 27 is 3
->>> execfile('lectureCode_lec3.3.3.py')
+>>> execfile('lec3.3.3.py')
 Enter an integer: -27
 Cube root of -27 is -3
->>> execfile('lectureCode_lec3.3.3.py')
+>>> execfile('lec3.3.3.py')
 Enter an integer: 12345
 12345 is not a perfect cube
 >>>
@@ -174,7 +174,7 @@ Enter an integer: 12345
 Converting decimal integer to binary
 ------------------------------------
 
-##### `lectureCode_lec3.4.3.py`
+##### `lec3.4.3.py`
 
 ```python
 # lecture 3.4, slide 3
@@ -199,14 +199,14 @@ if isNeg:
 
 ```python
 >>> # num = 302
->>> execfile('lectureCode_lec3.4.3.py')
+>>> execfile('lec3.4.3.py')
 >>> result
 '100101110'
 >>>
 >>>
 >>>
 >>> # num = 256
->>> execfile('lectureCode_lec3.4.3.py')
+>>> execfile('lec3.4.3.py')
 >>> result
 '100000000'
 >>>
@@ -215,7 +215,7 @@ if isNeg:
 So what about fractions?
 ------------------------
 
-##### `lectureCode_lec3.4.4.py`
+##### `lec3.4.4.py`
 
 ```python
 # lecture 3.4, slide 4
@@ -243,8 +243,8 @@ result = result[0:-p] + '.' + result[-p:]
 print('The binary representation of the decimal ' + str(x) + ' is ' + str(result))
 ```
 
-```python>>> execfile('lectureCode_lec3.4.3.py')
->>> execfile('lectureCode_lec3.4.4.py')
+```python>>> execfile('lec3.4.3.py')
+>>> execfile('lec3.4.4.py')
 Enter a decimal number between 0 and 1: .375
 Remainder = 0.375
 Remainder = 0.75
@@ -253,7 +253,7 @@ The binary representation of the decimal 0.375 is .011
 >>>
 >>>
 >>>
->>> execfile('lectureCode_lec3.4.4.py')
+>>> execfile('lec3.4.4.py')
 Enter a decimal number between 0 and 1: .1
 Remainder = 0.1
 Remainder = 0.2
@@ -318,7 +318,7 @@ The binary representation of the decimal 0.1 is .0001100110011001100110011001100
 Exhaustive enumeration
 ----------------------
 
-##### `lectureCode_lec3.5.2.py`
+##### `lec3.5.2.py`
 
 ```python
 # lecture 3.5, slide 2
@@ -343,25 +343,25 @@ else:
 
 ```python
 >>> # x = 25, step = epsilon**2 where epsilon = 0.01
->>> execfile('lectureCode_lec3.5.2.py')
+>>> execfile('lec3.5.2.py')
 numGuesses = 49990
 4.999 is close to the square root of 25
 >>>
 >>>
 >>> # x = 25, step = 0.5
->>> execfile('lectureCode_lec3.5.2.py')
+>>> execfile('lec3.5.2.py')
 numGuesses = 10
 5.0 is close to the square root of 25
 >>>
 >>>
 >>> # x = 25, step = 2
->>> execfile('lectureCode_lec3.5.2.py')
+>>> execfile('lec3.5.2.py')
 numGuesses = 13
 Failed on square root of 25
 >>>
 >>>
 >>> # x = 12345, step = epsilon**2 where epsilon = 0.01
->>> execfile('lectureCode_lec3.5.2.py')
+>>> execfile('lec3.5.2.py')
 numGuesses = 1111081
 111.108100003 is close to the square root of 12345
 ```
@@ -371,7 +371,7 @@ numGuesses = 1111081
 Bisection search
 ----------------
 
-##### `lectureCode_lec3.6.2.py`
+##### `lec3.6.2.py`
 
 ```python
 # lecture 3.6, slide 2
@@ -400,7 +400,7 @@ print(str(ans) + ' is close to square root of ' + str(x))
 ```python$
 >>> # x = 25
 KeyboardInterrupt
->>> execfile('lectureCode_lec3.6.2.py')
+>>> execfile('lec3.6.2.py')
 low = 0.0 high = 25 ans = 12.5
 low = 0.0 high = 12.5 ans = 6.25
 low = 0.0 high = 6.25 ans = 3.125
@@ -419,7 +419,7 @@ numGuesses = 13
 >>>
 >>>
 >>> # x = 12345
->>> execfile('lectureCode_lec3.6.2.py')
+>>> execfile('lec3.6.2.py')
 low = 0.0 high = 12345 ans = 6172.5
 low = 0.0 high = 6172.5 ans = 3086.25
 low = 0.0 high = 3086.25 ans = 1543.125
@@ -451,7 +451,7 @@ numGuesses = 26
 >>>
 >>>
 >>> x = 1234567
->>> execfile('lectureCode_lec3.6.2.py')
+>>> execfile('lec3.6.2.py')
 low = 0.0 high = 1234567 ans = 617283.5
 low = 0.0 high = 617283.5 ans = 308641.75
 low = 0.0 high = 308641.75 ans = 154320.875
@@ -499,7 +499,7 @@ Newton-Raphson
 
 [Newton's method](https://en.wikipedia.org/wiki/Newton%27s_method)
 
-##### `lectureCode_lec3.7.3.py`
+##### `lec3.7.3.py`
 
 ```python
 # Lecture 3.7, slide 3
@@ -518,7 +518,7 @@ print('Square root of ' + str(y) + ' is about ' + str(guess))
 
 ```python
 >>> # y = 24.0
->> execfile('lectureCode_lec3.7.3.py')
+>> execfile('lec3.7.3.py')
 7.0
 5.21428571429
 4.90851272016
@@ -527,7 +527,7 @@ Square root of 24.0 is about 4.89898874321
 >>>
 >>>
 >>> # y = 25.0
->>> execfile('lectureCode_lec3.7.3.py')
+>>> execfile('lec3.7.3.py')
 7.25
 5.34913793103
 5.01139410653
@@ -536,7 +536,7 @@ Square root of 25.0 is about 5.00001295305
 >>>
 >>>
 >>> # y = 12345.0
->>> execfile('lectureCode_lec3.7.3.py')
+>>> execfile('lec3.7.3.py')
 3087.25
 1545.62435217
 776.805707886

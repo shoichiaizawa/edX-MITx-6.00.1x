@@ -189,7 +189,7 @@ Are you 'Eric Grimson'?
 Straight line program
 ---------------------
 
-##### `lectureCode_Lec2.5.4.py`
+##### `lec2.5.4.py`
 
 ```python
 ## Lec 2.5, slide 4
@@ -202,7 +202,7 @@ print(y*y)
 ```
 
 ```python
->>> execfile('lectureCode_Lec2.5.4.py')
+>>> execfile('lec2.5.4.py')
 9
 Enter a number: 4
 16.0
@@ -213,7 +213,7 @@ Enter a number: 4
 Branching programs
 ------------------
 
-##### `lectureCode_Lec2.6.2.py`
+##### `lec2.6.2.py`
 
 ```python
 # Lec 2.6, slide 2
@@ -229,7 +229,7 @@ print('Done with conditional')
 ```
 
 ```python
->>> execfile('lectureCode_Lec2.6.2.py')
+>>> execfile('lec2.6.2.py')
 Enter an integer: 5
 
 Odd
@@ -237,7 +237,7 @@ Done with conditional
 >>>
 ```
 
-##### `lectureCode_Lec2.6.4.py`
+##### `lec2.6.4.py`
 
 ```python
 # Lec 2.6, slide 4
@@ -254,11 +254,11 @@ elif x%3 == 0:
 ```
 
 ```python
->>> execfile('lectureCode_Lec2.6.4.py')
+>>> execfile('lec2.6.4.py')
 Divisible by 2 and 3
 ```
 
-##### `lectureCode_Lec2.6.4.py` modified 1
+##### `lec2.6.4.py` modified 1
 
 ```python
 # Lec 2.6, slide 4
@@ -275,11 +275,11 @@ elif x%3 == 0:
 ```
 
 ```
->>> execfile('lectureCode_Lec2.6.4.py')
+>>> execfile('lec2.6.4.py')
 >>>
 ```
 
-##### `lectureCode_Lec2.6.4.py` modified 2
+##### `lec2.6.4.py` modified 2
 
 ```python
 # Lec 2.6, slide 4
@@ -298,7 +298,7 @@ else:
 ```
 
 ```
->>> execfile('lectureCode_Lec2.6.4.py')
+>>> execfile('lec2.6.4.py')
 Not divisible by 2 or 3
 ```
 
